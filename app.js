@@ -1,6 +1,10 @@
 const express = require('express');
+const cors = require('cors'); // Importe o módulo cors
 const app = express();
 const port = 3000;
+
+// Use o middleware cors
+app.use(cors());
 
 const simulateFootballGame = () => {
   // Probabilidade de ocorrer um gol em geral
